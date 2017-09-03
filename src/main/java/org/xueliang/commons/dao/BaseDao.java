@@ -32,8 +32,8 @@ public class BaseDao implements Closeable {
 
     public void loadProperties(Properties properties) {
         URL = properties.getProperty("jdbc.url");
-        DRIVER = properties.getProperty("jdbc.driver");
-        USER = properties.getProperty("jdbc.user");
+        DRIVER = properties.getProperty("jdbc.driverClassName");
+        USER = properties.getProperty("jdbc.username");
         PASSWORD = properties.getProperty("jdbc.password");
     }
 
